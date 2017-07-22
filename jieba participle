@@ -16,4 +16,4 @@ for seg in segs:
 segmentDF=pandas.DataFrame({'segment':segments})
 df=segmentDF.groupby("segment")["segment"].agg({"计数":numpy.size})
 print(df.head(100))
-df.to_excel(r'E:\ljj.xls',sheet_name 'sheet1')
+df.to_excel(r'ljj.xls',sheet_name 'sheet1')
